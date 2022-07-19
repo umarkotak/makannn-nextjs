@@ -22,8 +22,8 @@ export default function Home() {
 
       <div className="container mx-auto max-w-[1040px]">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
-          {dummyData.map((oneData) => (
-            <div className="flex justify-center px-1 mb-5 mx-2">
+          {dummyData.map((oneData, idx) => (
+            <div className="flex justify-center px-1 mb-5 mx-2" key={idx}>
               <div className="flex flex-col relative rounded-lg shadow-xl">
                 <a className="absolute top-0 p-2 text-white w-full">
                   <div className={`flex justify-end text-sm text-[#a8dadc]`}>
